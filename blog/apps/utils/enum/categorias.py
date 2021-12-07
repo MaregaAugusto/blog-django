@@ -1,0 +1,38 @@
+categorias = (
+    'Pobreza',
+    'Hambre',
+    'Salud',
+    'Educación',
+    'Igualdad de Género',
+    'Agua',
+    'Energía',
+    'Economía',
+    'Infraestructura',
+    'Desigualdad',
+    'Ciudades',
+    'Consumo',
+    'Cambio Climatico',
+    'Océanos',
+    'Biodiversidad',
+    'Paz - Justicia ',
+    'Aliazas')
+
+Categorias = [
+    ('Pobreza','Pobreza'),
+    ('Hambre','Hambre'),
+    ('Salud','Salud'),
+    ('Educación','Educación'),
+    ('Igualdad de Género','Igualdad de Género'),
+    ('Agua','Agua'),
+    ('Energía','Energía'),
+    ('Economía','Economía'),
+    ('Infraestructura','Infraestructura'),
+    ('Desigualdad','Desigualdad'),
+    ('Ciudades','Ciudades'),
+    ('Consumo','Consumo'),
+    ('Cambio Climatico','Cambio Climatico'),
+    ('Océanos','Océanos'),
+    ('Biodiversidad','Biodiversidad'),
+    ('Paz - Justicia ','Paz - Justicia '),
+    ('Aliazas','Aliazas')
+    ]
