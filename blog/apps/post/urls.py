@@ -1,8 +1,10 @@
-from django.urls import path
+from django.urls import path, re_path
 from . import views
 
 app_name="post"
 
 urlpatterns = [
-    path('listapost/<str:categoria>', views.ListarPost, name="listapost"),
+    path('listarCategoria/<str:categoria>', views.ListarPostPorCategoria, name="listarCategoria"),
+    re_path(r'^listarFecha/(?P<fecha>[0-9]{4}-?[0-9]{2}-?[0-9]{2})', views.ListarPostPorFecha, name="postFecha"),
+    path('addcomentario/', views.AddComentario, name="addcomentario")
 ]

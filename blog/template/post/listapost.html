@@ -1,10 +1,11 @@
-
-{% extends 'base.html' %}
-{% block title %}{{categoria}}{%endblock %}
-{% block contenido %}
-{% load static %}
-
-<h1>{{categoria}}</h1>
-<p>{{user}}</p>
-
-{% endblock %}
+{% for item in posts %}
+    <div class="col">
+        <div class="card">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ item.titulo }}</h5>
+                <p class="card-text">{{ item.texto }}</p>
+            </div>
+        </div>
+    </div>
+{% endfor %}
