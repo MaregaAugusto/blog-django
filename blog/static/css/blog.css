@@ -101,3 +101,16 @@ h1, h2, h3, h4, h5, h6 {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
+
+a {
+  color: #1bb1dc;
+  transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #0a98c0;
+  outline: none;
+  text-decoration: none;
+}

@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-
+from django.urls import reverse_lazy
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -23,6 +23,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'x5aqes0#q5_#)9d^=3vp1(1uv5gbc$2t%-^2j0ksz23cfww)r5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+#AUTH_USER_MODEL='usuarios.Usuario'
+# el primero es el nombre de la app, luego viene el nombre de el models 
+#AUTH_USER_MODEL='usuarios.Usuario'
+#este parte una vez logeado te redirecciona a esta pagina como es una app tenemos que llamarla de esta manera
+LOGIN_REDIRECT_URL = reverse_lazy('index')
+LOGOUT_REDIRECT_URL = reverse_lazy('index')
+LOGIN_URL = reverse_lazy('index')
 
 
 ALLOWED_HOSTS = []
@@ -37,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
     'apps.post',
     'apps.usuario',
     'apps.utils'    
@@ -73,7 +81,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'blog.wsgi.application'
 
-
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 

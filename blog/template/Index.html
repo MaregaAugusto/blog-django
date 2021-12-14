@@ -7,14 +7,16 @@
 <!--==========================
     Intro Section
 ============================-->
+<div class="container">
+<main id="main">
 <section id="intro" class="">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="{% static 'img/17objetivos.png' %}" class="d-block w-100" alt="...">
+            <img src="{% static 'img/17objetivos.png' %}" class="d-block w-100"  height="450">
           </div>
           <div class="carousel-item">
-            <img src="{% static 'img/objetivo.png' %}" class="d-block w-100" alt="...">
+            <img src="{% static 'img/objetivo.png' %}" class="d-block w-100"  height="450">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -27,14 +29,12 @@
         </button>
       </div>
 </section><!-- #intro -->
-<main id="main">
+</div>
 <!--==========================
     Home Us Section
 ============================-->
 <section id="Home">
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    {% include 'post/listapost.html' %}
-  </div>
+  {% include 'post/listapost.html' %}
 </section>
 </main>
 {% endblock %}

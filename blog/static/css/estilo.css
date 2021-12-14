@@ -1,0 +1,12 @@
+a {
+    color: #1bb1dc;
+    transition: 0.5s;
+  }
+  
+  a:hover,
+  a:active,
+  a:focus {
+    color: #0a98c0;
+    outline: none;
+    text-decoration: none;
+  }

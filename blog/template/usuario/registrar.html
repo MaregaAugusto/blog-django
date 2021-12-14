@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Login{%endblock %}
+{% block contenido %}
+{% load static %}
+{% load crispy_forms_tags %}
+<section>
+    <div class="container">
+        <div id="row" class="row justify-content-center align-items-center">
+            <div class="col-md-6">
+                <form method="POST">{%csrf_token%}
+                    {{ form.non_field_errors }}
+                    {{ form|crispy }}
+                    <div class="text-center form-group">
+                            <div class="text-center">
+                                <input type="submit" name="submit" class="btn btn-info btn-md entrer" value="Registrar">
+                                <input type="reset" name="reset" class="btn btn-info btn-md entrer" value="Cancelar">
+                            </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
